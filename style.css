@@ -104,20 +104,20 @@ span {
 }
 
 .btn-box {
-    width: 345px;
+    width: 300px;
     display: flex;
     gap: 2em;
 }
 
 .btn-1{
-    padding: 15px 20px;
+    padding: 10px 15px;
     background-color: black;
     color: whitesmoke;
-    border-radius: 8px;
+    border-radius: 6px;
     font-size: 18px;
     
     letter-spacing: 1px;
-    font-weight: 600;
+    font-weight: 50;
     transition: 0.3s ease;
     cursor: pointer;
 }
@@ -220,41 +220,85 @@ span {
     background-color: #f4f4f4;
 }
 
-.education h2, h3 {
+/* Styling untuk judul */
+h3 {
+    font-size: 32px;
     color: black;
-    margin-bottom: 20px;
-    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.education-table, .skills-table {
+h4 {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk tabel */
+table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
-.education-table th, .skills-table th {
+thead th {
     background-color: rgb(255, 0, 157);
     color: white;
     padding: 15px;
+    font-weight: bold;
     text-align: left;
-    font-size: 18px;
 }
 
-.education-table td, .skills-table td {
+tbody td {
     padding: 15px;
-    background-color: #fff;
     border-bottom: 1px solid #ddd;
-    font-size: 16px;
+    text-align: left;
 }
 
-.education-table tr:hover, .skills-table tr:hover {
+tbody tr:hover {
     background-color: rgba(255, 0, 157, 0.1);
 }
 
+.education-skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dua kolom dengan lebar sama */
+    gap: 20px; /* Jarak antara kolom */
+    padding: 40px 5%;
+    background-color: #f4f4f4;
+}
+
+/* Style untuk tabel header dan data */
+.education-table th, .skills-table th {
+    background-color: rgb(255, 0, 157); /* Warna latar belakang */
+    color: white; /* Warna teks */
+    padding: 15px; /* Padding untuk jarak dalam */
+    text-align: left; /* Rata kiri teks */
+    font-weight: bold; /* Teks tebal */
+}
+
+.education-table td, .skills-table td {
+    background-color: #fff; /* Warna latar belakang */
+    padding: 15px; /* Padding untuk jarak dalam */
+    text-align: left; /* Rata kiri teks */
+    border-bottom: 1px solid #ddd; /* Border bawah untuk memisahkan baris */
+}
+
+/* Efek hover untuk baris */
+.education-table tr:hover, .skills-table tr:hover {
+    background-color: rgba(255, 0, 157, 0.1); /* Warna latar saat hover */
+}
+
+/* Untuk tampilan lebih rapi, tambahkan margin pada tabel */
+table {
+    width: 100%; /* Lebar penuh tabel */
+    border-collapse: collapse; /* Menghilangkan jarak antar border */
+    margin-bottom: 20px; /* Margin bawah */
+}
 
 .contact-form h2{
     text-align: center;
-    margin-top: 3em;
+    margin-top: 1em;
     margin-bottom: 1em;
     font-size: 36px;
 }
@@ -263,7 +307,7 @@ span {
     max-width: 50em;
     margin: 1rem auto;
     text-align: center;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 .contact-form form .input-box{
@@ -275,11 +319,11 @@ span {
 .contact-form form .input-box input,
 .contact-form form textarea {
     width: 100%;
-    padding: 1.5em;
+    padding: 1em;
     font-size: 18px;
     color: black;
     background: white;
-    border-radius: .8rem;
+    border-radius: .6em;
     margin: 1rem 0;
     resize: none;
     border: 2px solid #ddd;
@@ -293,6 +337,9 @@ span {
 }
 
 .footer {
+    display: block;
+    visibility: visible;
+    z-index: 1;
     position: relative;
     bottom: 0;
     width: 100%;
