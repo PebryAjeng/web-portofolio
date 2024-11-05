@@ -9,8 +9,8 @@
   <body>
     <header class="header">
       <a href="#home" class="logo"><span>Peb</span>ry</a>
-      <nav class="navbar">
-        <a href="#portfolio" class="active">Portfolio</a>
+      <nav class="navbar" class="active">
+        <a href="#portofolio">Portofolio</a>
         <a href="#about">About Me</a>
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
@@ -19,7 +19,7 @@
     </header>
 
     <section id="home" class="home">
-      <div class="home-content">
+      <div class="home-content" action="portofolio">
         <h2>Hi</h2>
         <h1>
           I'm <span>Pebry<br /></span>a Web Developer
@@ -31,18 +31,14 @@
           satisfactory results according to client needs. Discover the projects
           I've worked on and how I can help you turn your ideas into reality.
         </p>
-        <div class="btn-box">
-          <button class="btn">Download CV</button>
-        </div>
       </div>
       <div class="img-box">
-        <img src="Photo.png" alt="" width="330" height="330" />
+        <img src="Photo.png" alt="" width="230" height="230" />
       </div>
     </section>
 
-    <!-- Section About -->
     <section id="about" class="about">
-      <div class="about-img">
+      <div class="about-img" action="about">
         <img src="Photo.png" alt="" width="350" height="350" align="center" />
       </div>
       <div class="about-content">
@@ -62,7 +58,7 @@
 
       <h4>This is my project in the numerical methods course</h4>
 
-      <div class="video-container">
+      <div class="video-container" action="projects">
         <iframe
           width="560"
           height="315"
@@ -87,66 +83,59 @@
       </div>
     </section>
 
-    <div class="education-skills-container">
-      <section clas="education">
+    <div class="education-skills-container" action="education">
+      <section class="education">
         <h3>Education</h3>
-      <table class="education-table">
-        <thead>
-          <tr>
-            <th>Degree</th>
-            <th>Timeline</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>S1 Computer Science, Pertamina University</td>
-            <td>Sept 2022 - Now</td>
-          </tr>
-          <tr>
-            <td>SMA Degree</td>
-            <td>July 2018 - May 2021</td>
-          </tr>
-        </tbody>
-      </table>
+        <table class="education-table">
+          <thead>
+            <tr>
+              <th>Degree</th>
+              <th>Timeline</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>S1 Computer Science, Pertamina University</td>
+              <td>Sept 2022 - Now</td>
+            </tr>
+            <tr>
+              <td>SMA Degree</td>
+              <td>July 2018 - May 2021</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <section class="skills">
         <h3>Additional Skills</h3>
-      <table class="skills-table">
-        <thead>
-          <tr>
-            <th>Technical Skills</th>
-            <th>Non Technical Skills</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Ms. Office, Web developer, Copywriter</td>
-            <td>Watching movies, Traveling</td>
-          </tr>
-        </tbody>
-      </table>
+        <table class="skills-table">
+          <thead>
+            <tr>
+              <th>Technical Skills</th>
+              <th>Non Technical Skills</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ms. Office, Web developer, Copywriter</td>
+              <td>Watching movies, Traveling</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </div>
 
     <section id="contact" class="contact-form">
       <h2 class="contact-me">Contact <span>Me</span></h2>
-      <form action="#">
+      <form action="contact">
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email" />
+          <input type="text" id="name" placeholder="Full Name" />
+          <input type="email" id="email" placeholder="Email" />
         </div>
         <div class="input-box">
-          <input type="text" placeholder="Phone Number" />
-          <input type="text" placeholder="Subject" />
+          <input type="text" id="phone" placeholder="Phone Number" />
+          <input type="text" id="description" placeholder="Description" />
         </div>
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-        ></textarea>
         <input type="submit" value="Send Message" class="btn-1" />
       </form>
     </section>
@@ -164,8 +153,9 @@
         <li><a href="#">Privacy Policy</a></li>
       </ul>
       <p class="Copyright">
-        &copy; Copyright Pebry Ajeng Cahyani 105222031 | All Rights Reserved
+        &copy; Copyright Pebry Ajeng Cahyani 105222031
       </p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
